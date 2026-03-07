@@ -2,6 +2,7 @@ import { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Phone, MapPin, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Vortex } from '../components/ui/vortex';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -144,7 +145,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
             </a>
             <div className="flex items-center gap-3 text-[#B8BDC7]">
               <MapPin className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">Pune, India — Working worldwide</span>
+              <span className="text-sm">Pune, India — Active Worldwide</span>
             </div>
           </div>
 
@@ -223,20 +224,31 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           </form>
         </div>
 
-        {/* Right Image */}
+        {/* Vortex Background Stage */}
         <div
           ref={rightImageRef}
-          className="hidden lg:block w-[45%] relative"
+          className="hidden lg:block w-[45%] relative overflow-hidden bg-black"
           style={{ opacity: 0 }}
         >
           <img 
-              src="/contact_office.webp" 
-              alt="Bhairava Workspace" 
-              className="w-full h-full object-cover opacity-80" 
-              loading="lazy"
-              decoding="async"
-            />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0D10]/50 to-transparent" />
+            src="/cultural_trends_2026.webp" 
+            alt="Bhairava Core Background" 
+            className="absolute inset-0 w-full h-full object-cover opacity-40" 
+          />
+          <Vortex
+            backgroundColor="transparent"
+            rangeY={800}
+            particleCount={200}
+            baseHue={200}
+            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-10"
+          >
+            <h2 className="text-white text-3xl md:text-5xl font-black uppercase text-center tracking-tighter mb-4">
+              BHAIRAVA CORE
+            </h2>
+            <p className="text-white/70 text-xs md:text-sm max-w-xs text-center font-light leading-relaxed">
+              Powering the next generation of creative assets through high-speed data architecture.
+            </p>
+          </Vortex>
         </div>
       </div>
 
