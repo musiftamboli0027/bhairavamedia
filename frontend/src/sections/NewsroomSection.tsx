@@ -88,7 +88,7 @@ const NewsroomSection = () => {
             {[
               { img: "/cultural_trends_2026.webp", title: "Cultural Trends 2026" },
               { img: "/aesthetic_engine_visual.webp", title: "The Aesthetic Engine" },
-              { img: "/three-positive-business-people-talking-office-lobby.webp", title: "Annual Studio Review" }
+              { img: "/annual_studio_review_2026.webp", title: "Annual Studio Review" }
             ].map((item, i) => (
               <div key={i} className="group relative aspect-[16/9] overflow-hidden border border-white/5 cursor-pointer">
                 <img 
