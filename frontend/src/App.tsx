@@ -14,6 +14,7 @@ import Navigation from './sections/Navigation';
 import EngineeringStandards from './sections/EngineeringStandards';
 import InnovationLab from './sections/InnovationLab';
 import NewsroomSection from './sections/NewsroomSection';
+import { VortexSection } from './sections/VortexSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +48,7 @@ function App() {
         <EngineeringStandards />
         <ServicesMosaic className="z-30" />
         <WorkCarousel className="z-40" />
+        <VortexSection />
         <InnovationLab />
         <CampaignSpotlight className="z-50" />
         <ProcessSection className="z-60" />
