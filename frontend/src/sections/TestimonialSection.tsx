@@ -148,7 +148,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
         style={{ opacity: 0.5 }}
       >
         <img
-          src="/team_collaboration.webp"
+          src="/testimonial_atmosphere.webp"
           alt="Testimonial background"
           className="w-full h-full object-cover"
         />

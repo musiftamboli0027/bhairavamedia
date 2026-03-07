@@ -165,7 +165,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
         <img
           src="/company_presentation.webp"
           alt="Bhairava Media Team"
-          className="w-full h-full object-cover grayscale opacity-40"
+          className="w-full h-full object-cover opacity-80"
           loading="eager"
           decoding="async"
           fetchPriority="high"

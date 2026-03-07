@@ -25,9 +25,9 @@ const NewsroomSection = () => {
         {/* Newsroom Hero Banner */}
         <div className="w-full h-48 md:h-64 overflow-hidden mb-16 border border-white/10 group">
             <img 
-              src="/company_presentation.webp" 
-              alt="Bhairava News" 
-              className="w-full h-full object-cover grayscale opacity-50 group-hover:scale-105 transition-transform duration-700" 
+              src="/digital_innovation_banner.webp" 
+              alt="Digital Innovation" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               loading="lazy"
               decoding="async"
             />
@@ -86,15 +86,15 @@ const NewsroomSection = () => {
           <span className="font-mono-label text-[#B8BDC7] mb-8 block text-center opacity-60">ARCHIVE HIGHLIGHTS</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
-              { img: "/company_presentation.webp", title: "Cultural Shifts 2025" },
-              { img: "/manifesto_neon_portrait.webp", title: "The Aesthetic Engine" },
-              { img: "/about_team.webp", title: "Annual Studio Review" }
+              { img: "/cultural_trends_2026.webp", title: "Cultural Trends 2026" },
+              { img: "/aesthetic_engine_visual.webp", title: "The Aesthetic Engine" },
+              { img: "/three-positive-business-people-talking-office-lobby.webp", title: "Annual Studio Review" }
             ].map((item, i) => (
               <div key={i} className="group relative aspect-[16/9] overflow-hidden border border-white/5 cursor-pointer">
                 <img 
                   src={item.img} 
                   alt={item.title} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" 
                   loading="lazy"
                   decoding="async"
                 />

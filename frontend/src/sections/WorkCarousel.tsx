@@ -15,7 +15,7 @@ const projects = [
     category: 'Brand + Performance',
     tags: ['Campaign Strategy', 'Paid Social', 'Creative Production'],
     description: 'A product drop built around nightlife culture—designed to sell out in 48 hours.',
-    image: '/strategic_planning.webp'
+    image: '/neon_work_showcase.webp'
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     category: 'Identity + Web',
     tags: ['Visual Identity', 'Web Design', 'Copy'],
     description: 'Turning a local service into a category leader with bold typography and clear story.',
-    image: '/corporate_meeting.webp'
+    image: '/branding_project_vibe.webp'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     category: 'Content + Social',
     tags: ['Content Strategy', 'Video', 'Community'],
     description: 'A month-long narrative that turned viewers into advocates.',
-    image: '/team_collaboration.webp'
+    image: '/editorial_video_vibe.webp'
   }
 ];
 

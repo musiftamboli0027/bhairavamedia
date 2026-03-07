@@ -232,7 +232,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           <img 
               src="/contact_office.webp" 
               alt="Bhairava Workspace" 
-              className="w-full h-full object-cover grayscale opacity-30" 
+              className="w-full h-full object-cover opacity-80" 
               loading="lazy"
               decoding="async"
             />

@@ -158,8 +158,8 @@ const ProcessSection = ({ className = '' }: ProcessSectionProps) => {
           style={{ opacity: 0 }}
         >
           <img 
-            src="/team_collaboration.webp" 
-            alt="Bhairava team in deep work" 
+            src="/process_breakthrough.webp" 
+            alt="Bhairava Breakthrough" 
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
         </div>
