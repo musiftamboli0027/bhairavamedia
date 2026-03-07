@@ -46,7 +46,7 @@ const Navigation = () => {
               className="flex items-center gap-3 transition-opacity hover:opacity-80"
             >
               <img 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="Bhairava Media" 
                 className="h-12 w-auto" 
                 loading="eager"
@@ -97,7 +97,7 @@ const Navigation = () => {
           {/* Menu Header */}
           <div className="flex items-center justify-between px-6 lg:px-12 py-4 border-b border-white/5">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Bhairava Media" className="h-12 w-auto" />
+              <img src="/logo.webp" alt="Bhairava Media" className="h-12 w-auto" />
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}

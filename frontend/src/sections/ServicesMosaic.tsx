@@ -118,7 +118,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/corporate_meeting.jpg"
+          src="/corporate_meeting.webp"
           alt="Bhairava Strategy"
           className="w-full h-full object-cover grayscale opacity-30 group-hover:scale-105 transition-transform duration-700"
           loading="lazy"
@@ -160,7 +160,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/mosaic_bottom_right.jpg"
+          src="/mosaic_bottom_right.webp"
           alt="Bhairava Creative"
           className="w-full h-full object-cover grayscale opacity-30 group-hover:scale-105 transition-transform duration-700"
           loading="lazy"

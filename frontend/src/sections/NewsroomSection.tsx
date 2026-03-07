@@ -25,7 +25,7 @@ const NewsroomSection = () => {
         {/* Newsroom Hero Banner */}
         <div className="w-full h-48 md:h-64 overflow-hidden mb-16 border border-white/10 group">
             <img 
-              src="/company_presentation.jpg" 
+              src="/company_presentation.webp" 
               alt="Bhairava News" 
               className="w-full h-full object-cover grayscale opacity-50 group-hover:scale-105 transition-transform duration-700" 
               loading="lazy"
@@ -86,9 +86,9 @@ const NewsroomSection = () => {
           <span className="font-mono-label text-[#B8BDC7] mb-8 block text-center opacity-60">ARCHIVE HIGHLIGHTS</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
-              { img: "/hero_city_night.jpg", title: "Cultural Shifts 2025" },
-              { img: "/manifesto_neon_portrait.jpg", title: "The Aesthetic Engine" },
-              { img: "/about_team.jpg", title: "Annual Studio Review" }
+              { img: "/company_presentation.webp", title: "Cultural Shifts 2025" },
+              { img: "/manifesto_neon_portrait.webp", title: "The Aesthetic Engine" },
+              { img: "/about_team.webp", title: "Annual Studio Review" }
             ].map((item, i) => (
               <div key={i} className="group relative aspect-[16/9] overflow-hidden border border-white/5 cursor-pointer">
                 <img 

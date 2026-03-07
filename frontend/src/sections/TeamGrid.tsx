@@ -124,7 +124,7 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/team_portrait_01.jpg"
+          src="/DM 1.webp"
           alt="Team Member"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -140,7 +140,7 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/team_portrait_02.jpg"
+          src="/DM 2.webp"
           alt="Team Member"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -179,7 +179,7 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/team_portrait_03.jpg"
+          src="/team_collaboration.webp"
           alt="Team Member"
           className="w-full h-full object-cover"
           loading="lazy"

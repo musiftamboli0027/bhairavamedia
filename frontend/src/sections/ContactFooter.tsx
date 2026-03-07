@@ -230,7 +230,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           style={{ opacity: 0 }}
         >
           <img 
-              src="/contact_office.jpg" 
+              src="/contact_office.webp" 
               alt="Bhairava Workspace" 
               className="w-full h-full object-cover grayscale opacity-30" 
               loading="lazy"
@@ -244,7 +244,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
       <footer className="border-t border-white/10 py-8 px-6 lg:px-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <img src="/logo.png" alt="Bhairava Media" className="h-10 w-auto" />
+            <img src="/logo.webp" alt="Bhairava Media" className="h-10 w-auto" />
             <span className="text-[#B8BDC7] text-sm">© 2026 Bhairava Media. All rights reserved.</span>
           </div>
           <div className="flex items-center gap-4">

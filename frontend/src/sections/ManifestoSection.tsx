@@ -152,7 +152,7 @@ const ManifestoSection = ({ className = '' }: ManifestoSectionProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/about_team.jpg"
+          src="/about_team.webp"
           alt="Bhairava Team"
           className="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 transition-transform duration-[2s] ease-out"
           loading="lazy"

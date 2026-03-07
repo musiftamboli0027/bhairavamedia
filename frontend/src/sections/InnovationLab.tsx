@@ -36,8 +36,8 @@ const InnovationLab = () => {
       {/* Background Image Overlay */}
       <div className="absolute inset-0 -z-10 opacity-30 img-skeleton pointer-events-none">
         <img 
-          src="/core_innovation.jpg" 
-          alt="AI Core Background" 
+          src="/core_innovation.webp" 
+          alt="Bhairava Innovation" 
           className="w-full h-full object-cover"
           loading="lazy"
           decoding="async"
