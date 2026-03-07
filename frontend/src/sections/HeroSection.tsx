@@ -159,14 +159,16 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
       {/* Background Image */}
       <div
         ref={bgRef}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full z-0 img-skeleton"
         style={{ opacity: 0 }}
       >
         <img
           src="/company_presentation.jpg"
-          alt="Bhairava team presentation"
-          className="w-full h-full object-cover object-center"
+          alt="Bhairava Media Team"
+          className="w-full h-full object-cover grayscale opacity-40"
           loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
         {/* Vignette overlay */}
         <div className="absolute inset-0 vignette-overlay" />

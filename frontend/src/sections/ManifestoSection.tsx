@@ -153,8 +153,10 @@ const ManifestoSection = ({ className = '' }: ManifestoSectionProps) => {
       >
         <img
           src="/about_team.jpg"
-          alt="Bhairava team collaboration"
-          className="w-full h-full object-cover object-center"
+          alt="Bhairava Team"
+          className="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 transition-transform duration-[2s] ease-out"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0B0D10]/30" />
       </div>

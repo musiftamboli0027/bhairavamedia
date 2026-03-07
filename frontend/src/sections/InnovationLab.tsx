@@ -34,11 +34,13 @@ const InnovationLab = () => {
       className="relative bg-ink py-24 md:py-32 overflow-hidden border-t border-white/5"
     >
       {/* Background Image Overlay */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+      <div className="absolute inset-0 -z-10 opacity-30 img-skeleton pointer-events-none">
         <img 
           src="/core_innovation.jpg" 
           alt="AI Core Background" 
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-ink" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/50 to-ink" />

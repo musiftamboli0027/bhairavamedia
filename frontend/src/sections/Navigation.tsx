@@ -45,7 +45,13 @@ const Navigation = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center gap-3 transition-opacity hover:opacity-80"
             >
-              <img src="/logo.png" alt="Bhairava Media" className="h-12 w-auto" />
+              <img 
+                src="/logo.png" 
+                alt="Bhairava Media" 
+                className="h-12 w-auto" 
+                loading="eager"
+                fetchPriority="high"
+              />
             </button>
 
             {/* Desktop Nav */}

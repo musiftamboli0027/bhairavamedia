@@ -229,11 +229,13 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           className="hidden lg:block w-[45%] relative"
           style={{ opacity: 0 }}
         >
-          <img
-            src="/contact_office.jpg"
-            alt="Our office"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <img 
+              src="/contact_office.jpg" 
+              alt="Bhairava Workspace" 
+              className="w-full h-full object-cover grayscale opacity-30" 
+              loading="lazy"
+              decoding="async"
+            />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0D10]/50 to-transparent" />
         </div>
       </div>

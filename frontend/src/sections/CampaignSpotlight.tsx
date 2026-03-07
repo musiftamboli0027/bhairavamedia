@@ -129,6 +129,8 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
           src="/strategic_planning.jpg"
           alt="Campaign spotlight"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 vignette-overlay" />

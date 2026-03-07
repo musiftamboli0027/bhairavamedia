@@ -120,13 +120,15 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
       {/* Top Left Portrait */}
       <div
         ref={topLeftRef}
-        className="absolute left-0 top-0 w-1/2 h-1/2 overflow-hidden"
+        className="absolute left-0 top-0 w-1/2 h-1/2 overflow-hidden img-skeleton"
         style={{ opacity: 0 }}
       >
         <img
           src="/team_portrait_01.jpg"
-          alt="Team member"
+          alt="Team Member"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#0B0D10]/30" />
       </div>
@@ -139,8 +141,10 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
       >
         <img
           src="/team_portrait_02.jpg"
-          alt="Team member"
+          alt="Team Member"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-bl from-transparent to-[#0B0D10]/30" />
       </div>
@@ -176,8 +180,10 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
       >
         <img
           src="/team_portrait_03.jpg"
-          alt="Team member"
+          alt="Team Member"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-tl from-transparent to-[#0B0D10]/30" />
       </div>

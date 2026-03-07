@@ -24,11 +24,13 @@ const NewsroomSection = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         {/* Newsroom Hero Banner */}
         <div className="w-full h-48 md:h-64 overflow-hidden mb-16 border border-white/10 group">
-          <img 
-            src="/company_presentation.jpg" 
-            alt="Newsroom Hero" 
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
-          />
+            <img 
+              src="/company_presentation.jpg" 
+              alt="Bhairava News" 
+              className="w-full h-full object-cover grayscale opacity-50 group-hover:scale-105 transition-transform duration-700" 
+              loading="lazy"
+              decoding="async"
+            />
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
@@ -93,6 +95,8 @@ const NewsroomSection = () => {
                   src={item.img} 
                   alt={item.title} 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-ink/60 group-hover:bg-ink/20 transition-colors flex items-end p-6">
                   <h4 className="text-[#F2F2F2] font-bold uppercase tracking-tight text-sm translate-y-2 group-hover:translate-y-0 transition-transform">{item.title}</h4>
