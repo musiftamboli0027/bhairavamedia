@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,16 +17,24 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
       setIsMenuOpen(false);
     }
   };
 
   const menuItems = [
     { label: 'Work', id: 'work-carousel' },
-    { label: 'Solutions', id: 'services-mosaic' },
+    { label: 'Services', id: 'services-mosaic' },
     { label: 'The Lab', id: 'lab' },
     { label: 'Newsroom', id: 'newsroom' },
+    { label: 'Team', id: 'team' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -35,52 +43,55 @@ const Navigation = () => {
       {/* Fixed Header */}
       <header 
         className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
-          isVisible ? 'opacity-100 translate-y-0 shadow-lg' : 'opacity-100 translate-y-0'
+          isVisible ? 'bg-ink/90 backdrop-blur-md border-b border-white/10 py-3 shadow-2xl' : 'bg-transparent py-5'
         }`}
       >
-        <div className="bg-ink/80 backdrop-blur-md border-b border-white/5">
-          <div className="flex items-center justify-between px-6 lg:px-12 py-4">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center gap-3 transition-opacity hover:opacity-80"
+              className="flex items-center gap-3 transition-transform hover:scale-105 active:scale-95"
             >
               <img 
                 src="/logo.webp" 
                 alt="Bhairava Media" 
-                className="h-12 w-auto" 
+                className="h-10 md:h-12 w-auto" 
                 loading="eager"
-                fetchPriority="high"
               />
             </button>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-8">
-              {menuItems.map((item) => (
+            <nav className="hidden lg:flex items-center gap-10">
+              {menuItems.slice(0, 4).map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="font-mono-label text-[#B8BDC7] hover:text-[#FF4D2E] transition-colors"
+                  className="font-mono-label text-xs md:text-sm tracking-widest text-[#B8BDC7] hover:text-[#FF4D2E] transition-colors relative group"
                 >
                   {item.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#FF4D2E] transition-all group-hover:w-full" />
                 </button>
               ))}
             </nav>
 
             {/* CTA + Menu Button */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 md:gap-8">
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="hidden sm:block font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors"
+                className="hidden sm:inline-flex bg-[#FF4D2E] text-white px-5 py-2.5 font-mono-label text-xs tracking-tighter hover:bg-[#ff6b52] transition-colors rounded-none"
               >
-                Start a project
+                START A PROJECT
               </button>
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="flex items-center gap-2 font-mono-label text-[#F2F2F2] hover:text-[#FF4D2E] transition-colors"
+                className="flex items-center gap-2 group"
               >
-                <Menu className="w-5 h-5" />
-                <span className="hidden sm:inline">Menu</span>
+                <div className="flex flex-col gap-1.5 items-end">
+                  <div className="w-6 h-0.5 bg-white group-hover:bg-[#FF4D2E] transition-colors" />
+                  <div className="w-4 h-0.5 bg-white group-hover:bg-[#FF4D2E] transition-colors" />
+                </div>
+                <span className="hidden md:inline font-mono-label text-xs tracking-widest text-white group-hover:text-[#FF4D2E] transition-colors">MENU</span>
               </button>
             </div>
           </div>

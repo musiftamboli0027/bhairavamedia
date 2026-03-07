@@ -230,17 +230,12 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           className="hidden lg:block w-[45%] relative overflow-hidden bg-black"
           style={{ opacity: 0 }}
         >
-          <img 
-            src="/cultural_trends_2026.webp" 
-            alt="Bhairava Core Background" 
-            className="absolute inset-0 w-full h-full object-contain md:object-cover scale-110 opacity-40 blur-[2px]" 
-          />
           <Vortex
-            backgroundColor="transparent"
+            backgroundColor="black"
             rangeY={800}
-            particleCount={200}
+            particleCount={300}
             baseHue={200}
-            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-10"
+            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
           >
             <h2 className="text-white text-3xl md:text-5xl font-black uppercase text-center tracking-tighter mb-4">
               BHAIRAVA CORE

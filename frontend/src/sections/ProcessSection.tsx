@@ -158,7 +158,7 @@ const ProcessSection = ({ className = '' }: ProcessSectionProps) => {
           style={{ opacity: 0 }}
         >
           <img 
-            src="/process_breakthrough.webp" 
+            src="/core_innovation.webp" 
             alt="Bhairava Breakthrough" 
             className="w-full h-full object-contain p-4 transition-transform duration-1000 group-hover:scale-105"
           />

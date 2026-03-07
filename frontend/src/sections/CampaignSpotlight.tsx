@@ -126,7 +126,7 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
         style={{ opacity: 0.6 }}
       >
         <img
-          src="/three-positive-business-people-talking-office-lobby.webp"
+          src="/annual_studio_review_2026.webp"
           alt="Midnight Drop Campaign"
           className="w-full h-full object-cover brightness-[0.7]"
           loading="lazy"

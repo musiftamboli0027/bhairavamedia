@@ -76,6 +76,7 @@ const EngineeringStandards = () => {
   return (
     <section 
       ref={sectionRef} 
+      id="lab"
       className="bg-[#0B0D10] py-24 md:py-32 border-y border-white/5"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-12">

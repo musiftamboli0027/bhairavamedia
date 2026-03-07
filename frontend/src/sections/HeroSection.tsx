@@ -188,17 +188,17 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6">
         <div ref={headlineRef} className="relative group w-full flex justify-center">
             {/* Vapour effect replaces static text */}
-            <div className="h-[250px] w-full max-w-[1100px] flex items-center justify-center relative z-10 bg-transparent">
+            <div className="h-[180px] sm:h-[220px] md:h-[250px] w-full max-w-[1100px] flex items-center justify-center relative z-10 bg-transparent">
                 <VaporizeTextCycle
                     texts={["Stories That Move People", "Digital Edge Engineering", "Creative Strategy Group"]}
                     font={{
                         fontFamily: "Inter, sans-serif",
-                        fontSize: "clamp(2rem, 6.5vw, 5.5rem)",
+                        fontSize: "clamp(1.8rem, 8vw, 5.5rem)",
                         fontWeight: 900
                     }}
                     color="rgb(242, 242, 242)"
-                    spread={7}
-                    density={10}
+                    spread={window.innerWidth < 768 ? 4 : 7}
+                    density={window.innerWidth < 768 ? 6 : 10}
                     animation={{
                         vaporizeDuration: 2.5,
                         fadeInDuration: 1.2,
