@@ -144,7 +144,7 @@ const Navigation = () => {
           <div className="px-6 lg:px-12 py-6 border-t border-white/5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <span className="font-mono-label text-[#B8BDC7]">
-                hello@bhairava.media
+                Rajesh.W@Bhairavamedia.in
               </span>
               <span className="font-mono-label text-[#B8BDC7]">
                 Pune, India — Working worldwide

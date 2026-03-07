@@ -135,13 +135,13 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
 
           {/* Contact Info */}
           <div className="flex flex-col gap-4 mb-10">
-            <a href="mailto:hello@bhairava.media" className="flex items-center gap-3 text-[#F2F2F2] hover:text-[#FF4D2E] transition-colors">
+            <a href="mailto:Rajesh.W@Bhairavamedia.in" className="flex items-center gap-3 text-[#F2F2F2] hover:text-[#FF4D2E] transition-colors">
               <Mail className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">hello@bhairava.media</span>
+              <span className="text-sm">Rajesh.W@Bhairavamedia.in</span>
             </a>
-            <a href="tel:+910000000000" className="flex items-center gap-3 text-[#F2F2F2] hover:text-[#FF4D2E] transition-colors">
+            <a href="tel:+919359095541" className="flex items-center gap-3 text-[#F2F2F2] hover:text-[#FF4D2E] transition-colors">
               <Phone className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">+91 00000 00000</span>
+              <span className="text-sm">+91 9359095541</span>
             </a>
             <div className="flex items-center gap-3 text-[#B8BDC7]">
               <MapPin className="w-5 h-5" strokeWidth={1.5} />
