@@ -126,8 +126,8 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
         style={{ opacity: 0.6 }}
       >
         <img
-          src="/strategic_planning.webp"
-          alt="Bhairava Spotlight"
+          src="/core_tech_visual.webp"
+          alt="Bhairava Core"
           className="w-full h-full object-cover brightness-[0.7]"
           loading="lazy"
           decoding="async"

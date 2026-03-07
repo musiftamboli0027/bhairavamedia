@@ -163,8 +163,8 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/company_presentation.webp"
-          alt="Bhairava Media Team"
+          src="/creative_orbit.webp"
+          alt="Bhairava Media Hub"
           className="w-full h-full object-cover opacity-80"
           loading="eager"
           decoding="async"

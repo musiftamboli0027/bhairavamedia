@@ -12,7 +12,6 @@ import TestimonialSection from './sections/TestimonialSection';
 import ContactFooter from './sections/ContactFooter';
 import Navigation from './sections/Navigation';
 import EngineeringStandards from './sections/EngineeringStandards';
-import InnovationLab from './sections/InnovationLab';
 import NewsroomSection from './sections/NewsroomSection';
 import { VortexSection } from './sections/VortexSection';
 
@@ -49,7 +48,6 @@ function App() {
         <ServicesMosaic className="z-30" />
         <WorkCarousel className="z-40" />
         <VortexSection />
-        <InnovationLab />
         <CampaignSpotlight className="z-50" />
         <ProcessSection className="z-60" />
         <NewsroomSection />

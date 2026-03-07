@@ -118,7 +118,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
         style={{ opacity: 0 }}
       >
         <img
-          src="/corporate_meeting.webp"
+          src="/team_collaboration_v3.webp"
           alt="Bhairava Strategy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           loading="lazy"
