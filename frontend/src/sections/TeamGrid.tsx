@@ -133,19 +133,33 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#0B0D10]/30" />
       </div>
 
-      {/* Top Right Portrait */}
+      {/* Top Right Landscape with Diagonal Text (Red Area) */}
       <div
         ref={topRightRef}
-        className="absolute right-0 top-0 w-1/2 h-1/2 overflow-hidden"
+        className="absolute right-0 top-0 w-1/2 h-1/2 overflow-hidden bg-black group"
         style={{ opacity: 0 }}
       >
         <img
-          src="/DM 2.webp"
-          alt="Team Member"
-          className="w-full h-full object-cover"
+          src="/three-positive-business-people-talking-office-lobby.webp"
+          alt="Team Collaboration"
+          className="w-full h-full object-cover opacity-60 transition-opacity duration-700 group-hover:opacity-100"
           loading="lazy"
           decoding="async"
         />
+        
+        {/* Unique Diagonal Animated Text */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-[20%] left-[-10%] rotate-[-12deg] whitespace-nowrap animate-pulse">
+            <span className="text-white/20 text-4xl font-black uppercase tracking-[1em]">CORE ENGINE SYSTEM</span>
+          </div>
+          <div className="absolute top-[50%] right-[-10%] rotate-[-12deg] whitespace-nowrap opacity-10">
+            <span className="text-white text-6xl font-black uppercase tracking-[0.5em]">DATA FLOW</span>
+          </div>
+          <div className="absolute bottom-[20%] left-[5%] rotate-[-12deg] whitespace-nowrap animate-bounce duration-[3s]">
+            <span className="text-[#FF4D2E]/20 text-2xl font-mono uppercase tracking-[0.2em] font-bold">STRENGTH // INNOVATION</span>
+          </div>
+        </div>
+
         <div className="absolute inset-0 bg-gradient-to-bl from-transparent to-[#0B0D10]/30" />
       </div>
 
@@ -172,20 +186,20 @@ const TeamGrid = ({ className = '' }: TeamGridProps) => {
         </button>
       </div>
 
-      {/* Bottom Right Portrait */}
+      {/* Bottom Right Image Tile (Green Area) */}
       <div
         ref={bottomRightRef}
-        className="absolute right-0 bottom-0 w-1/2 h-1/2 overflow-hidden"
+        className="absolute right-0 bottom-0 w-1/2 h-1/2 overflow-hidden bg-black group"
         style={{ opacity: 0 }}
       >
         <img
-          src="/team_collaboration.webp"
-          alt="Team Member"
-          className="w-full h-full object-cover"
+          src="/team_collaboration_v3.webp"
+          alt="Bhairava Collaboration"
+          className="w-full h-full object-cover opacity-70 group-hover:scale-110 transition-all duration-[1s]"
           loading="lazy"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-gradient-to-tl from-transparent to-[#0B0D10]/30" />
+        <div className="absolute inset-0 bg-gradient-to-tl from-transparent to-[#0B0D10]/40" />
       </div>
 
       {/* Center Cross Rules */}

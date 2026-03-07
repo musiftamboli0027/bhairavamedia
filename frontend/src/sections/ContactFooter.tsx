@@ -233,7 +233,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           <img 
             src="/cultural_trends_2026.webp" 
             alt="Bhairava Core Background" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40" 
+            className="absolute inset-0 w-full h-full object-contain md:object-cover scale-110 opacity-40 blur-[2px]" 
           />
           <Vortex
             backgroundColor="transparent"

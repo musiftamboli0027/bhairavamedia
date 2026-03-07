@@ -27,7 +27,7 @@ const NewsroomSection = () => {
             <img 
               src="/digital_innovation_banner.webp" 
               alt="Digital Innovation" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+              className="w-full h-full object-cover md:object-contain group-hover:scale-105 transition-transform duration-700 bg-black" 
               loading="lazy"
               decoding="async"
             />
