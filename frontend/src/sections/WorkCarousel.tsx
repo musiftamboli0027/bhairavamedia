@@ -15,7 +15,7 @@ const projects = [
     category: "Brand + Performance",
     tags: ["Campaign Strategy", "Paid Social", "Creative Production"],
     description:
-      "A product drop built around nightlife culture—designed to sell out in 48 hours.",
+      "A product drop built around nightlife culture-designed to sell out in 48 hours.",
     image: "/technical_innovation.webp",
   },
   {

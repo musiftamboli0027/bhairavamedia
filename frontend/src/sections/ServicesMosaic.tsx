@@ -116,7 +116,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
             Creative Engine.
           </h3>
           <p className="text-sm md:text-base text-[#B8BDC7] max-w-sm leading-relaxed">
-            Web Development and a full Creative Suite—integrating Lottie, Rive, and WebGL for high-end digital experiences.
+            Web Development and a full Creative Suite-integrating Lottie, Rive, and WebGL for high-end digital experiences.
           </p>
         </div>
 
