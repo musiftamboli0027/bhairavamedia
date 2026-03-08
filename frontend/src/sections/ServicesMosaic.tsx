@@ -103,7 +103,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
             Strategy & Scale.
           </h3>
           <p className="text-sm md:text-base text-[#B8BDC7] max-w-sm leading-relaxed">
-            Digital Marketing, Performance, and PR—engineered for exponential growth and cultural impact.
+            Digital Marketing, Performance, and PR-engineered for exponential growth and cultural impact.
           </p>
         </div>
 

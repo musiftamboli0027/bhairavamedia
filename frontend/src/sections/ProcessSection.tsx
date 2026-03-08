@@ -144,11 +144,10 @@ const ProcessSection = ({ className = '' }: ProcessSectionProps) => {
             OUR PROCESS
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2] mb-6">
-            From Brief to Breakthrough
+           From Concept to Completion
           </h2>
           <p className="text-base md:text-lg text-[#B8BDC7] max-w-2xl mx-auto">
-            A simple, repeatable system that keeps creativity sharp and delivery predictable.
-          </p>
+A clear, proven path that turns your ideas into results.    </p>
         </div>
 
         {/* Process Image */}
@@ -157,11 +156,11 @@ const ProcessSection = ({ className = '' }: ProcessSectionProps) => {
           className="w-full h-64 md:h-96 overflow-hidden mb-16 border border-white/10 group"
           style={{ opacity: 0 }}
         >
-          <img 
-            src="/core_innovation.webp" 
-            alt="Bhairava Breakthrough" 
-            className="w-full h-full object-contain p-4 transition-transform duration-1000 group-hover:scale-105"
-          />
+         <img 
+  src="/core_innovation.webp" 
+  alt="Bhairava Breakthrough" 
+  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+/>
         </div>
 
         {/* Steps Cards */}

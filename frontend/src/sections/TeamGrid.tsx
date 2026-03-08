@@ -144,7 +144,7 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
             >
               <span className="word inline-block">Thinkers,</span>{" "}
               <span className="word inline-block">Creators,</span>{" "}
-              <span className="word inline-block">Builders—</span>
+              <span className="word inline-block">Builders &</span>
             </h3>
 
             <p className="text-[#B8BDC7] max-w-sm">
@@ -171,7 +171,7 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
           </h3>
 
           <p className="text-[#B8BDC7] max-w-sm mb-6">
-            Strategists, designers, writers, and makers—working as one team.
+            Strategists, designers, writers, and makers-working as one team.
           </p>
 
           <button className="text-[#FF4D2E] underline">

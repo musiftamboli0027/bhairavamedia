@@ -143,10 +143,10 @@ const Navigation = () => {
           {/* Menu Footer */}
           <div className="px-6 lg:px-12 py-6 border-t border-white/5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span className="font-mono-label text-[#B8BDC7]">
+              <span className="font-mono-label text-[#de8c3e]">
                 Rajesh.W@Bhairavamedia.in
               </span>
-              <span className="font-mono-label text-[#B8BDC7]">
+              <span className="font-mono-label text-[#70ee4d]">
                 Pune, India — Working worldwide
               </span>
             </div>

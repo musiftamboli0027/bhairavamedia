@@ -145,7 +145,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
             </a>
             <div className="flex items-center gap-3 text-[#B8BDC7]">
               <MapPin className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">Pune, India — Active Worldwide</span>
+              <span className="text-sm">Pune, India-Active Worldwide</span>
             </div>
           </div>
 

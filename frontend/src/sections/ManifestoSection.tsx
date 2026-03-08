@@ -136,15 +136,15 @@ const ManifestoSection = ({ className = "" }: ManifestoSectionProps) => {
 
   const headline = "BHAIRAVA MEDIA REPRESENTS STRENGTH.";
 
-  const chars = headline.split("").map((char, i) => (
-    <span
-      key={i}
-      className="char inline-block"
-      style={{ whiteSpace: char === " " ? "pre" : "normal" }}
-    >
-      {char}
-    </span>
-  ));
+const chars = headline.split(" ").map((word, wordIndex) => (
+  <span key={wordIndex} className="inline-block mr-2 whitespace-nowrap">
+    {word.split("").map((char, charIndex) => (
+      <span key={charIndex} className="char inline-block">
+        {char}
+      </span>
+    ))}
+  </span>
+));
 
   return (
     <section
@@ -186,8 +186,7 @@ const ManifestoSection = ({ className = "" }: ManifestoSectionProps) => {
 
           <h2
             ref={headlineRef}
-            className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2]"
-            style={{ opacity: 0 }}
+className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2] leading-tight break-keep"            style={{ opacity: 0 }}
           >
             {chars}
           </h2>
