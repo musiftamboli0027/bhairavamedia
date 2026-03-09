@@ -3,8 +3,9 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 interface ManifestoSectionProps {
   className?: string;
@@ -131,7 +132,19 @@ const ManifestoSection = ({ className = "" }: ManifestoSectionProps) => {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (!element) return;
+
+    const pinnedTrigger = ScrollTrigger.getAll().find(
+      (t) => t.trigger === element && t.pin
+    );
+
+    gsap.to(window, {
+      duration: 0.9,
+      scrollTo: pinnedTrigger
+        ? pinnedTrigger.start
+        : { y: element, offsetY: 80 },
+      ease: 'power2.inOut',
+    });
   };
 
   const headline = "BHAIRAVA MEDIA REPRESENTS STRENGTH.";

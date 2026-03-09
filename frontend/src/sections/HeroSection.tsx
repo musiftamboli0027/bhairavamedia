@@ -1,9 +1,10 @@
 import { useEffect, useRef, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import VaporizeTextCycle, { Tag } from "../components/ui/vapour-text-effect";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 interface HeroSectionProps {
   className?: string;
@@ -154,8 +155,20 @@ const HeroSection = ({ className = "" }: HeroSectionProps) => {
   }, []);
 
   const scrollToWork = () => {
-    const element = document.getElementById("work-carousel");
-    element?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById('work-carousel');
+    if (!element) return;
+
+    const pinnedTrigger = ScrollTrigger.getAll().find(
+      (t) => t.trigger === element && t.pin
+    );
+
+    gsap.to(window, {
+      duration: 0.9,
+      scrollTo: pinnedTrigger
+        ? pinnedTrigger.start
+        : { y: element, offsetY: 80 },
+      ease: 'power2.inOut',
+    });
   };
 
   return (

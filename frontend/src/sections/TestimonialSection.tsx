@@ -1,8 +1,9 @@
 import { useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 interface TestimonialSectionProps {
   className?: string;
@@ -122,9 +123,19 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (!element) return;
+
+    const pinnedTrigger = ScrollTrigger.getAll().find(
+      (t) => t.trigger === element && t.pin
+    );
+
+    gsap.to(window, {
+      duration: 0.9,
+      scrollTo: pinnedTrigger
+        ? pinnedTrigger.start
+        : { y: element, offsetY: 80 },
+      ease: 'power2.inOut',
+    });
   };
 
   // Split quote into words

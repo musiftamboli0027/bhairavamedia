@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +21,25 @@ const Navigation = () => {
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
-    // Use a short delay so the menu closes before scrolling (avoids visual glitch)
     setTimeout(() => {
       const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (!element) return;
+
+      // Find all ScrollTriggers that are pinning this exact section element.
+      // For a pinned section, trigger.start is the precise scroll position
+      // where that section's animation begins — the only reliable target on
+      // pages with stacked GSAP pins.
+      const pinnedTrigger = ScrollTrigger.getAll().find(
+        (t) => t.trigger === element && t.pin
+      );
+
+      gsap.to(window, {
+        duration: 0.9,
+        scrollTo: pinnedTrigger
+          ? pinnedTrigger.start          // exact computed scroll position
+          : { y: element, offsetY: 80 }, // fallback for non-pinned sections
+        ease: 'power2.inOut',
+      });
     }, 80);
   };
 
