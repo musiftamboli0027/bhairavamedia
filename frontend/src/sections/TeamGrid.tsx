@@ -143,7 +143,7 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
               className="text-3xl lg:text-4xl font-black uppercase text-white mb-4"
             >
               <span className="word inline-block">Thinkers,</span>{" "}
-              <span className="word inline-block">Creators,&</span>{" "}
+              <span className="word inline-block">Creators, &</span>{" "}
               <span className="word inline-block">Builders</span>
             </h3>
 
