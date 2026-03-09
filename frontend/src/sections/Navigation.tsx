@@ -55,7 +55,7 @@ const Navigation = () => {
                 className="h-14 md:h-16 w-auto object-contain"
                 loading="eager"
               />
-              <span className="hidden xs:flex flex-col leading-none">
+              <span className="flex flex-col leading-none">
                 <span
                   className="font-black uppercase tracking-wider text-base md:text-lg"
                   style={{
