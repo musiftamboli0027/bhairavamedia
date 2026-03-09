@@ -179,7 +179,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
           className="mt-8 text-sm md:text-base text-[#B8BDC7] text-center"
           style={{ opacity: 0 }}
         >
-          — Marketing Director, Lifestyle Brand
+          - Marketing Director, Lifestyle Brand
         </p>
       </div>
 

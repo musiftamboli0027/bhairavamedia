@@ -56,7 +56,7 @@ const Navigation = () => {
               <img 
                 src="/logo.webp" 
                 alt="Bhairava Media" 
-                className="h-10 md:h-12 w-auto" 
+                className="h-14 md:h-16 w-auto" 
                 loading="eager"
               />
             </button>
@@ -143,10 +143,10 @@ const Navigation = () => {
           {/* Menu Footer */}
           <div className="px-6 lg:px-12 py-6 border-t border-white/5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span className="font-mono-label text-[#de8c3e]">
-                Rajesh.W@Bhairavamedia.in
+              <span className="font-sans text-[#d5cfca]">
+                rajesh.w@bhairavamedia.in
               </span>
-              <span className="font-mono-label text-[#70ee4d]">
+              <span className="font-sans text-[#70ee4d]">
                 Pune, India — Working worldwide
               </span>
             </div>
