@@ -147,7 +147,7 @@ const ProcessSection = ({ className = '' }: ProcessSectionProps) => {
            From Concept to Completion
           </h2>
           <p className="text-base md:text-lg text-[#B8BDC7] max-w-2xl mx-auto">
-A clear, proven path that turns your ideas into results.    </p>
+A proven process that turns ideas into impactfull results.   </p>
         </div>
 
         {/* Process Image */}
