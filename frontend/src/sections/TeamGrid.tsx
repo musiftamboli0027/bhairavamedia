@@ -126,7 +126,9 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
           <img
             src="/DM 1.webp"
             className="w-full h-full object-cover"
-            alt="team"
+            alt="Team member portrait or discussion"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -174,7 +176,7 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
             Strategists, designers, writers, and makers-working as one team.
           </p>
 
-          <button className="text-[#FF4D2E] underline">
+          <button aria-label="See open roles" className="text-[#FF4D2E] underline">
             See open roles
           </button>
         </div>
@@ -188,7 +190,9 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
           <img
             src="/team_collaboration_v3.webp"
             className="w-full h-full object-cover"
-            alt="team work"
+            alt="Team collaborating on a project"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

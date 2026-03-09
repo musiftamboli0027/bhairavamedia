@@ -50,7 +50,7 @@ const NewsroomSection = () => {
             </p>
           </div>
 
-          <button className="flex items-center gap-3 bg-white/5 hover:bg-[#FF4D2E] text-[#F2F2F2] px-8 py-4 font-mono-label text-sm transition-colors border border-white/10">
+          <button aria-label="Download Media Kit" className="flex items-center gap-3 bg-white/5 hover:bg-[#FF4D2E] text-[#F2F2F2] px-8 py-4 font-mono-label text-sm transition-colors border border-white/10">
             <Download className="w-4 h-4" />
             DOWNLOAD MEDIA KIT
           </button>
@@ -143,7 +143,7 @@ const NewsroomSection = () => {
           </div>
 
           <div className="text-center">
-            <button className="font-mono-label text-[#B8BDC7] hover:text-[#FF4D2E] transition-colors underline underline-offset-8">
+            <button aria-label="Explore Full Archive" className="font-mono-label text-[#B8BDC7] hover:text-[#FF4D2E] transition-colors underline underline-offset-8">
               EXPLORE FULL ARCHIVE →
             </button>
           </div>

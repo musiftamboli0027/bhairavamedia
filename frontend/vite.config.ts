@@ -17,9 +17,22 @@ export default defineConfig({
     minify: 'terser',
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          gsap: ['gsap'],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'react-core';
+            }
+            if (id.includes('gsap')) {
+              return 'gsap-core';
+            }
+            if (id.includes('lucide-react')) {
+              return 'lucide-icons';
+            }
+            if (id.includes('framer-motion')) {
+              return 'framer-motion';
+            }
+            return 'vendor'; // all other node_modules
+          }
         },
       },
     },

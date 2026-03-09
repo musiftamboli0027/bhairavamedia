@@ -175,6 +175,7 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
       {/* Bottom Right CTA */}
       <button
         ref={bottomRightRef}
+        aria-label="View Case Study"
         className="absolute bottom-[7vh] right-[6vw] font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors z-10 underline underline-offset-4 gsap-anim"
         style={{ opacity: 0 }}
       >

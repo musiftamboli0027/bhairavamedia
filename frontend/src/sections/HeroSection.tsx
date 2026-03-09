@@ -154,20 +154,26 @@ const HeroSection = ({ className = "" }: HeroSectionProps) => {
     };
   }, []);
 
-  const scrollToWork = () => {
+  const scrollToWork = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     const element = document.getElementById('work-carousel');
     if (!element) return;
 
-    const pinnedTrigger = ScrollTrigger.getAll().find(
-      (t) => t.trigger === element && t.pin
-    );
+    ScrollTrigger.refresh();
+
+    const pinnedTrigger = ScrollTrigger.getAll().find((t) => {
+      return t.pin && t.trigger && (t.trigger as HTMLElement).id === 'work-carousel';
+    });
+
+    const targetScroll = pinnedTrigger ? pinnedTrigger.start : element;
 
     gsap.to(window, {
-      duration: 0.9,
-      scrollTo: pinnedTrigger
-        ? pinnedTrigger.start
-        : { y: element, offsetY: 80 },
-      ease: 'power2.inOut',
+      duration: 1,
+      scrollTo: {
+        y: targetScroll,
+        offsetY: pinnedTrigger ? 0 : 80
+      },
+      ease: 'power3.inOut',
     });
   };
 
@@ -233,7 +239,7 @@ const HeroSection = ({ className = "" }: HeroSectionProps) => {
         <div className="relative mt-10">
           <button
             ref={ctaRef}
-            onClick={scrollToWork}
+            onClick={(e) => scrollToWork(e)}
             className="font-mono-label text-[#FF4D2E] hover:text-white transition-all duration-300 underline underline-offset-4 px-8 py-4 bg-black/60 hover:bg-[#FF4D2E] backdrop-blur-xl rounded-full border border-[#FF4D2E]/30"
             style={{ opacity: 0 }}
           >

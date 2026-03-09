@@ -160,6 +160,8 @@ A proven process that turns ideas into impactfull results.   </p>
   src="/core_innovation.webp" 
   alt="Bhairava Breakthrough" 
   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+  loading="lazy"
+  decoding="async"
 />
         </div>
 

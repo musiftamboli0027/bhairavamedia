@@ -119,6 +119,8 @@ const WorkCarousel = ({ className = "" }: WorkCarouselProps) => {
               src={project.image}
               alt={project.title}
               className="w-full h-[240px] object-cover rounded-md"
+              loading="lazy"
+              decoding="async"
             />
 
             <h3 className="text-2xl font-black uppercase text-[#F2F2F2]">
@@ -221,6 +223,8 @@ const WorkCarousel = ({ className = "" }: WorkCarouselProps) => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0B0D10]/60 to-transparent" />

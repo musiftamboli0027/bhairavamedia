@@ -178,6 +178,7 @@ const chars = headline.split(" ").map((word, wordIndex) => (
             alt="Bhairava Team"
             className="w-full h-full object-cover"
             loading="lazy"
+            decoding="async"
           />
         </div>
 

@@ -162,6 +162,8 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
           src="/testimonial_atmosphere.webp"
           alt="Testimonial background"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 vignette-overlay" />

@@ -1,18 +1,22 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, lazy, Suspense } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Above the fold - keep static imports to avoid CLS
 import HeroSection from './sections/HeroSection';
-import ManifestoSection from './sections/ManifestoSection';
-import ServicesMosaic from './sections/ServicesMosaic';
-import WorkCarousel from './sections/WorkCarousel';
-import CampaignSpotlight from './sections/CampaignSpotlight';
-import ProcessSection from './sections/ProcessSection';
-import TeamGrid from './sections/TeamGrid';
-import TestimonialSection from './sections/TestimonialSection';
-import ContactFooter from './sections/ContactFooter';
 import Navigation from './sections/Navigation';
-import EngineeringStandards from './sections/EngineeringStandards';
-import NewsroomSection from './sections/NewsroomSection';
+
+// Below the fold - Lazy Load Components
+const ManifestoSection = lazy(() => import('./sections/ManifestoSection'));
+const ServicesMosaic = lazy(() => import('./sections/ServicesMosaic'));
+const WorkCarousel = lazy(() => import('./sections/WorkCarousel'));
+const CampaignSpotlight = lazy(() => import('./sections/CampaignSpotlight'));
+const ProcessSection = lazy(() => import('./sections/ProcessSection'));
+const TeamGrid = lazy(() => import('./sections/TeamGrid'));
+const TestimonialSection = lazy(() => import('./sections/TestimonialSection'));
+const ContactFooter = lazy(() => import('./sections/ContactFooter'));
+const EngineeringStandards = lazy(() => import('./sections/EngineeringStandards'));
+const NewsroomSection = lazy(() => import('./sections/NewsroomSection'));
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,16 +46,20 @@ function App() {
       {/* Sections */}
       <main className="relative">
         <HeroSection className="z-10" />
-        <ManifestoSection className="z-20" />
-        <EngineeringStandards />
-        <ServicesMosaic className="z-30" />
-        <WorkCarousel className="z-40" />
-        <CampaignSpotlight className="z-50" />
-        <ProcessSection className="z-60" />
-        <NewsroomSection />
-        <TeamGrid className="z-70" />
-        <TestimonialSection className="z-80" />
-        <ContactFooter className="z-90" />
+        
+        {/* Lazy Loaded Sections with Suspense Boundary */}
+        <Suspense fallback={<div className="min-h-screen bg-ink flex items-center justify-center text-white">Loading...</div>}>
+          <ManifestoSection className="z-20" />
+          <EngineeringStandards />
+          <ServicesMosaic className="z-30" />
+          <WorkCarousel className="z-40" />
+          <CampaignSpotlight className="z-50" />
+          <ProcessSection className="z-60" />
+          <NewsroomSection />
+          <TeamGrid className="z-70" />
+          <TestimonialSection className="z-80" />
+          <ContactFooter className="z-90" />
+        </Suspense>
       </main>
     </div>
   );

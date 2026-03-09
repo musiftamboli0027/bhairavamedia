@@ -338,7 +338,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
 
           <div className="flex items-center gap-4">
 
-            <img src="/logo.webp" alt="Bhairava Media" className="h-10" />
+            <img src="/logo.webp" alt="Bhairava Media" className="h-10" loading="lazy" decoding="async" />
 
             <span className="text-[#B8BDC7] text-sm">
               © 2026 Bhairava Media. All rights reserved.
@@ -347,12 +347,18 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           </div>
 
           <div className="flex gap-4">
-
-            <Instagram className="w-5 h-5 text-[#B8BDC7] hover:text-[#FF4D2E]" />
-            <Linkedin className="w-5 h-5 text-[#B8BDC7] hover:text-[#FF4D2E]" />
-            <Twitter className="w-5 h-5 text-[#B8BDC7] hover:text-[#FF4D2E]" />
-            <Youtube className="w-5 h-5 text-[#B8BDC7] hover:text-[#FF4D2E]" />
-
+            <a href="#" aria-label="Instagram" className="text-[#B8BDC7] hover:text-[#FF4D2E]">
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a href="#" aria-label="LinkedIn" className="text-[#B8BDC7] hover:text-[#FF4D2E]">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="#" aria-label="Twitter" className="text-[#B8BDC7] hover:text-[#FF4D2E]">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="#" aria-label="YouTube" className="text-[#B8BDC7] hover:text-[#FF4D2E]">
+              <Youtube className="w-5 h-5" />
+            </a>
           </div>
 
         </div>
