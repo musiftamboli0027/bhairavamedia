@@ -115,8 +115,8 @@ const ManifestoSection = ({ className = "" }: ManifestoSectionProps) => {
             stagger: 0.1,
             scrollTrigger: {
               trigger: section,
-              start: "top 80%",
-              toggleActions: "play none none reverse"
+              start: "top 100%",
+              toggleActions: "play none none none"
             }
           }
         );
@@ -158,7 +158,7 @@ const chars = headline.split(" ").map((word, wordIndex) => (
         <div
           ref={leftPanelRef}
           className="relative lg:absolute left-0 top-0 w-full lg:w-1/2 h-[40vh] lg:h-full overflow-hidden"
-          style={{ opacity: 0 }}
+         
         >
           <img
             src="/team_office_bright.webp"
@@ -178,7 +178,7 @@ const chars = headline.split(" ").map((word, wordIndex) => (
         >
           <span
             ref={topLabelRef}
-            className="text-[#B8BDC7] mb-6 block"
+            className="text-[#B8BDC7] mb-6 block gsap-anim"
             style={{ opacity: 0 }}
           >
             ABOUT BHAIRAVA
@@ -186,14 +186,14 @@ const chars = headline.split(" ").map((word, wordIndex) => (
 
           <h2
             ref={headlineRef}
-className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2] leading-tight break-keep"            style={{ opacity: 0 }}
+className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2] leading-tight break-keep gsap-anim"            style={{ opacity: 0 }}
           >
             {chars}
           </h2>
 
           <p
             ref={bodyRef}
-            className="mt-8 text-lg text-[#B8BDC7] max-w-xl"
+            className="mt-8 text-lg text-[#B8BDC7] max-w-xl gsap-anim"
             style={{ opacity: 0 }}
           >
             A marketing agency with a slow site is a brand contradiction. From
@@ -202,7 +202,7 @@ className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-[#F2F2F2] 
 
           <div
             ref={ctaRef}
-            className="mt-10 flex gap-6"
+            className="mt-10 flex gap-6 gsap-anim"
             style={{ opacity: 0 }}
           >
             <button

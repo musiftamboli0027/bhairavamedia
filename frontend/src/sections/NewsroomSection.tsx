@@ -4,7 +4,7 @@ const newsItems = [
   {
     date: "Mar 05, 2026",
     tag: "AWARDS",
-    title: "Bhairava Media Named Top Digital Strategy Studio in the Region",
+    title: "Bhairava Media Named Top Digital Strategy Studio in the Region.",
   },
   {
     date: "Feb 20, 2026",

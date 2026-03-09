@@ -15,18 +15,14 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      setIsMenuOpen(false);
-    }
+    setIsMenuOpen(false);
+    // Use a short delay so the menu closes before scrolling (avoids visual glitch)
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 80);
   };
 
   const menuItems = [
@@ -51,14 +47,33 @@ const Navigation = () => {
             {/* Logo */}
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center gap-3 transition-transform hover:scale-105 active:scale-95"
+              className="flex items-center gap-2.5 transition-transform hover:scale-105 active:scale-95"
             >
               <img 
                 src="/logo.webp" 
                 alt="Bhairava Media" 
-                className="h-14 md:h-16 w-auto" 
+                className="h-14 md:h-16 w-auto object-contain"
                 loading="eager"
               />
+              <span className="hidden xs:flex flex-col leading-none">
+                <span
+                  className="font-black uppercase tracking-wider text-base md:text-lg"
+                  style={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    background: 'linear-gradient(135deg, #C9973A 0%, #F0C060 45%, #C9973A 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  Bhairava
+                </span>
+                <span
+                  className="font-mono-label text-[10px] md:text-[11px] tracking-[0.22em] text-[#B8BDC7]"
+                >
+                  MEDIA
+                </span>
+              </span>
             </button>
 
             {/* Desktop Nav */}
@@ -107,8 +122,25 @@ const Navigation = () => {
         <div className="h-full flex flex-col">
           {/* Menu Header */}
           <div className="flex items-center justify-between px-6 lg:px-12 py-4 border-b border-white/5">
-            <div className="flex items-center gap-3">
-              <img src="/logo.webp" alt="Bhairava Media" className="h-12 w-auto" />
+            <div className="flex items-center gap-2.5">
+              <img src="/logo.webp" alt="Bhairava Media" className="h-12 w-auto object-contain" />
+              <span className="flex flex-col leading-none">
+                <span
+                  className="font-black uppercase tracking-wider text-base"
+                  style={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    background: 'linear-gradient(135deg, #C9973A 0%, #F0C060 45%, #C9973A 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  Bhairava
+                </span>
+                <span className="font-mono-label text-[10px] tracking-[0.22em] text-[#B8BDC7]">
+                  MEDIA
+                </span>
+              </span>
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}

@@ -13,19 +13,19 @@ const steps = [
   {
     number: '01',
     title: 'Discover',
-    description: 'Audience, competition, context, constraints.',
+    description: 'Audience, competition, context and constraints.',
     icon: Search
   },
   {
     number: '02',
     title: 'Design',
-    description: 'Concepts, prototypes, copy, visuals.',
+    description: 'Concepts, prototypes, copy and visuals.',
     icon: Palette
   },
   {
     number: '03',
     title: 'Deliver',
-    description: 'Launch, learn, optimize, scale.',
+    description: 'Launch, learn, optimize and scale.',
     icon: Rocket
   }
 ];
@@ -33,7 +33,7 @@ const steps = [
 const principles = [
   { title: 'Fast feedback loops', icon: Zap },
   { title: 'Platform-native craft', icon: Target },
-  { title: 'Data-informed, taste-led', icon: Users },
+  { title: 'Data-informed Decisions', icon: Users },
   { title: 'Clear ownership', icon: Shield }
 ];
 

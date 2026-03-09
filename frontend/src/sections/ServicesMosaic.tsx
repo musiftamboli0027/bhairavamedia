@@ -59,9 +59,9 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
             stagger: 0.1,
             scrollTrigger: {
               trigger: section,
-              start: "top 80%",
+              start: "top 100%",
               end: "bottom 20%",
-              toggleActions: "play none none reverse"
+              toggleActions: "play none none none"
             }
           }
         );
@@ -83,7 +83,6 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
         <div
           ref={topLeftRef}
           className="relative lg:absolute left-0 top-0 w-full lg:w-1/2 h-[30vh] lg:h-1/2 overflow-hidden"
-          style={{ opacity: 0 }}
         >
           <img
             src="/team_collaboration_v3.webp"
@@ -100,7 +99,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
           className="relative lg:absolute right-0 top-0 w-full lg:w-1/2 h-auto lg:h-1/2 bg-charcoal flex flex-col justify-center px-8 lg:px-16 py-12 lg:py-0"
         >
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-black uppercase text-[#F2F2F2] mb-4">
-            Strategy & Scale.
+            Strategy & Scale
           </h3>
           <p className="text-sm md:text-base text-[#B8BDC7] max-w-sm leading-relaxed">
             Digital Marketing, Performance, and PR-engineered for exponential growth and cultural impact.
@@ -113,7 +112,7 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
           className="relative lg:absolute left-0 bottom-0 w-full lg:w-1/2 h-auto lg:h-1/2 bg-ink flex flex-col justify-center px-8 lg:px-16 py-12 lg:py-0 order-last lg:order-none"
         >
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-black uppercase text-[#F2F2F2] mb-4">
-            Creative Engine.
+            Creative Engine
           </h3>
           <p className="text-sm md:text-base text-[#B8BDC7] max-w-sm leading-relaxed">
             Web Development and a full Creative Suite-integrating Lottie, Rive, and WebGL for high-end digital experiences.
@@ -124,7 +123,6 @@ const ServicesMosaic = ({ className = '' }: ServicesMosaicProps) => {
         <div
           ref={bottomRightRef}
           className="relative lg:absolute right-0 bottom-0 w-full lg:w-1/2 h-[30vh] lg:h-1/2 overflow-hidden"
-          style={{ opacity: 0 }}
         >
           <img
             src="/core_tech_visual.webp"

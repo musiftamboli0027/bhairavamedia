@@ -99,7 +99,7 @@ const TeamGrid = ({ className = "" }: TeamGridProps) => {
             stagger: 0.12,
             scrollTrigger: {
               trigger: section,
-              start: "top 80%"
+              start: "top 100%"
             }
           }
         );

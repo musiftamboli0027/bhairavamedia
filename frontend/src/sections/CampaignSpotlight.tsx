@@ -139,7 +139,7 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
       {/* Top Center Label */}
       <span
         ref={topLabelRef}
-        className="absolute top-[6vh] left-1/2 -translate-x-1/2 font-mono-label text-[#B8BDC7] z-10"
+        className="absolute top-[6vh] left-1/2 -translate-x-1/2 font-mono-label text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         FEATURED PROJECT
@@ -149,14 +149,14 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6">
         <h2
           ref={headlineRef}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black uppercase text-center text-[#F2F2F2]"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black uppercase text-center text-[#F2F2F2] gsap-anim"
           style={{ perspective: '1000px', opacity: 0 }}
         >
           Midnight Drop
         </h2>
         <p
           ref={subRef}
-          className="mt-6 text-base md:text-lg text-[#B8BDC7] text-center max-w-xl"
+          className="mt-6 text-base md:text-lg text-[#B8BDC7] text-center max-w-xl gsap-anim"
           style={{ opacity: 0 }}
         >
           A city-wide launch built for feeds, stories, and real-world buzz.
@@ -166,7 +166,7 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
       {/* Bottom Left Label */}
       <span
         ref={bottomLeftRef}
-        className="absolute bottom-[7vh] left-[6vw] font-mono-label text-[#B8BDC7] z-10"
+        className="absolute bottom-[7vh] left-[6vw] font-mono-label text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         CAMPAIGN 2026
@@ -175,7 +175,7 @@ const CampaignSpotlight = ({ className = '' }: CampaignSpotlightProps) => {
       {/* Bottom Right CTA */}
       <button
         ref={bottomRightRef}
-        className="absolute bottom-[7vh] right-[6vw] font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors z-10 underline underline-offset-4"
+        className="absolute bottom-[7vh] right-[6vw] font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors z-10 underline underline-offset-4 gsap-anim"
         style={{ opacity: 0 }}
       >
         VIEW CASE STUDY

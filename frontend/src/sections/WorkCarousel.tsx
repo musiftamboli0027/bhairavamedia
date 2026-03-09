@@ -24,7 +24,7 @@ const projects = [
     category: "Identity + Web",
     tags: ["Visual Identity", "Web Design", "Copy"],
     description:
-      "Turning a local service into a category leader with bold typography and clear story.",
+      "Turning a local service into a category leader with bold typography and a clear story.",
     image: "/branding_project_vibe.webp",
   },
   {

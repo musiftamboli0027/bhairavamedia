@@ -159,7 +159,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
       {/* Top Center Label */}
       <span
         ref={topLabelRef}
-        className="absolute top-[6vh] left-1/2 -translate-x-1/2 font-mono-label text-[#B8BDC7] z-10"
+        className="absolute top-[6vh] left-1/2 -translate-x-1/2 font-mono-label text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         CLIENT WORDS
@@ -176,7 +176,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
         </h2>
         <p
           ref={attributionRef}
-          className="mt-8 text-sm md:text-base text-[#B8BDC7] text-center"
+          className="mt-8 text-sm md:text-base text-[#B8BDC7] text-center gsap-anim"
           style={{ opacity: 0 }}
         >
           - Marketing Director, Lifestyle Brand
@@ -186,7 +186,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
       {/* Bottom Left Label */}
       <span
         ref={bottomLeftRef}
-        className="absolute bottom-[7vh] left-[6vw] font-mono-label text-[#B8BDC7] z-10"
+        className="absolute bottom-[7vh] left-[6vw] font-mono-label text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         SOURCE: ANNUAL REVIEW
@@ -196,7 +196,7 @@ const TestimonialSection = ({ className = '' }: TestimonialSectionProps) => {
       <button
         ref={bottomRightRef}
         onClick={scrollToContact}
-        className="absolute bottom-[7vh] right-[6vw] font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors z-10 underline underline-offset-4"
+        className="absolute bottom-[7vh] right-[6vw] font-mono-label text-[#FF4D2E] hover:text-[#ff6b52] transition-colors z-10 underline underline-offset-4 gsap-anim"
         style={{ opacity: 0 }}
       >
         START A PROJECT

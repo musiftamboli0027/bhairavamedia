@@ -135,7 +135,8 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
           </h2>
 
           <p className="text-base md:text-lg text-[#B8BDC7] mb-10 max-w-md">
-            Tell us what you're launching. We'll respond within 48 hours.
+            Have something existing to launch? 
+            Tell us about it. we'll get back to within 48 hours.
           </p>
 
           {/* CONTACT INFO */}
@@ -160,7 +161,7 @@ const ContactFooter = ({ className = '' }: ContactFooterProps) => {
 
             <div className="flex items-center gap-3 text-[#B8BDC7]">
               <MapPin className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">Pune, India - Active Worldwide</span>
+              <span className="text-sm">Pune, India - Serving Clients Worldwide</span>
             </div>
 
           </div>

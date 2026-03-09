@@ -232,7 +232,7 @@ const HeroSection = ({ className = "" }: HeroSectionProps) => {
       {/* Bottom Labels */}
       <span
         ref={bottomLeftRef}
-        className="absolute bottom-[7vh] left-[6vw] text-xs tracking-widest text-[#B8BDC7] z-10"
+        className="absolute bottom-[7vh] left-[6vw] text-xs tracking-widest text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         BHAIRAVA MEDIA
@@ -240,7 +240,7 @@ const HeroSection = ({ className = "" }: HeroSectionProps) => {
 
       <span
         ref={bottomRightRef}
-        className="absolute bottom-[7vh] right-[6vw] text-xs tracking-widest text-[#B8BDC7] z-10"
+        className="absolute bottom-[7vh] right-[6vw] text-xs tracking-widest text-[#B8BDC7] z-10 gsap-anim"
         style={{ opacity: 0 }}
       >
         SCROLL TO EXPLORE

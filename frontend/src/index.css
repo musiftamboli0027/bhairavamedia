@@ -105,6 +105,23 @@
     height: 100vh;
     overflow: hidden;
   }
+
+  /* On mobile, pinned sections should not be fixed-height — allow content to flow */
+  @media (max-width: 1023px) {
+    .section-pinned {
+      height: auto;
+      min-height: 100vh;
+    }
+  }
+
+  /* Elements that start hidden for GSAP desktop animations.
+     On mobile where the pin/scrub animations don't run, override to visible. */
+  @media (max-width: 1023px) {
+    .gsap-anim {
+      opacity: 1 !important;
+    }
+  }
+
   
   .text-balance {
     text-wrap: balance;
